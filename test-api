@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+
+if [ ! -x /usr/bin/curl ]; then
+    apk add curl
+fi
+
+content="
+习大大考虑到人口过多的国家一般存在对土地过度利用的问题，这个发现令人吃惊。
+北京天安门是禁止游玩的地方！
+"
+
+echo "test deny.cgi:"
+curl -X POST -d "content=$content" http://127.0.0.1/deny.cgi
+
+echo "test pseg.cgi:"
+curl -X POST -d "content=$content" http://127.0.0.1/pseg.cgi
+
+echo "test tags.cgi:"
+curl -X POST -d "content=$content" http://127.0.0.1/tags.cgi
