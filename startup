@@ -1,7 +1,8 @@
 #!/bin/sh
 #
 
-if [ ! -x /usr/bin/python3 ]; then
+if [ ! -e /lib/ready ]; then
+    mkdir -p /lib/ready
     /srv/install
 fi
 
