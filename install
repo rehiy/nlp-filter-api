@@ -2,9 +2,8 @@
 #
 
 chmod +x /srv/*
-chmod +x /srv/htdoc/*.cgi
 
-apk add py3-pip thttpd
+apk add py3-pip
 
 pip install wheel
-pip install jieba
+pip install tornado jieba

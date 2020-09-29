@@ -1,9 +1,9 @@
 #!/bin/sh
 #
 
-if [ ! -x /usr/sbin/thttpd ]; then
+if [ ! -x /usr/bin/python3 ]; then
     /srv/install
 fi
 
-echo "Start thttpd service"
-exec thttpd -d /srv/htdoc/ -c *.cgi -D
+echo "Start api server"
+exec python3 /srv/htbin/server.py
