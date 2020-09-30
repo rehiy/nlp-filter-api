@@ -1,9 +1,0 @@
-#!/bin/sh
-#
-
-chmod +x /srv/*
-
-apk add py3-pip
-
-pip install wheel
-pip install tornado jieba

@@ -3,8 +3,10 @@
 
 if [ ! -e /lib/ready ]; then
     mkdir -p /lib/ready
-    /srv/install
+    apk add py3-pip
 fi
 
 cd /srv
+
+pip3 install -q -r nlp-api/requirements.txt
 exec python3 -m nlp-api

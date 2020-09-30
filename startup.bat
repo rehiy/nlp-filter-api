@@ -14,6 +14,8 @@ IF EXIST D:\RunTime\python3\runtime.bat (
 
 CD /d %~dp0
 
+pip3 install -q -r nlp-api\requirements.txt
+
 python -m nlp-api
 
 IF "%1" == "" CMD /k
