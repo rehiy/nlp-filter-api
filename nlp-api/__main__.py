@@ -1,3 +1,3 @@
-from .serve import App
+from .httpd import Httpd
 
-App().start()
+Httpd().start()
