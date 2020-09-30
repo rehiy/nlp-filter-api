@@ -7,7 +7,7 @@ import jieba.analyse as anls
 dirname = os.path.dirname(os.path.abspath(__file__))
 
 
-class Jbnlp():
+class JiebaApi():
 
     def __init__(self):
         jieba.initialize()

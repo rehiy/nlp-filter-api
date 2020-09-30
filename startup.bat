@@ -14,6 +14,6 @@ IF EXIST D:\RunTime\python3\runtime.bat (
 
 CD /d %~dp0
 
-python htbin\server.py
+python -m nlp-api
 
 IF "%1" == "" CMD /k

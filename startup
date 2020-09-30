@@ -6,5 +6,5 @@ if [ ! -e /lib/ready ]; then
     /srv/install
 fi
 
-echo "Start api server"
-exec python3 /srv/htbin/server.py
+cd /srv
+exec python3 -m nlp-api
