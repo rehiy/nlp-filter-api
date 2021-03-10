@@ -8,5 +8,5 @@ fi
 
 cd /srv
 
-pip3 install -q -r nlp-api/requirements.txt
-exec python3 -m nlp-api
+pip3 install -q -r nlp-serve/requirements.txt
+exec python3 -m nlp-serve

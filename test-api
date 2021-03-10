@@ -11,10 +11,10 @@ content="
 "
 
 echo "test deny.cgi:"
-curl -X POST -d "content=$content" http://127.0.0.1/deny
+curl -X POST -d "content=$content" http://127.0.0.1:8100/deny
 
 echo "test pseg.cgi:"
-curl -X POST -d "content=$content" http://127.0.0.1/pseg
+curl -X POST -d "content=$content" http://127.0.0.1:8100/pseg
 
 echo "test tags.cgi:"
-curl -X POST -d "content=$content" http://127.0.0.1/tags
+curl -X POST -d "content=$content" http://127.0.0.1:8100/tags

@@ -12,6 +12,6 @@ class Httpd(tornado.web.Application):
         self.nlp = JiebaApi()
         super(Httpd, self).__init__(pages)
 
-    def start(self, port=80):
+    def start(self, port=8100):
         tornado.httpserver.HTTPServer(self).listen(port)
         tornado.ioloop.IOLoop.current().start()
